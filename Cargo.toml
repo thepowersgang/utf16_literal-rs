@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Provides the u16! macro that emits a UTF-16 string literal"
 authors = [ "John Hodge <tpg@mutabah.net>" ]
 repository = "https://github.com/thepowersgang/utf16_literal-rs"
+license = "MIT OR Apache-2.0"
 
 [lib]
 proc-macro = true
