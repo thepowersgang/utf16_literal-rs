@@ -50,7 +50,6 @@ pub fn utf16(input: TokenStream) -> TokenStream
 					rv.push(::proc_macro::TokenTree::Literal(::proc_macro::Literal::u16_suffixed(0xD800 + hi as u16)));
 					rv.push(::proc_macro::TokenTree::Punct(::proc_macro::Punct::new(',', ::proc_macro::Spacing::Alone)));
 					rv.push(::proc_macro::TokenTree::Literal(::proc_macro::Literal::u16_suffixed(0xDC00 + lo as u16)));
-					rv.push(::proc_macro::TokenTree::Literal(::proc_macro::Literal::u16_suffixed(c as u32 as u16)));
 					rv.push(::proc_macro::TokenTree::Punct(::proc_macro::Punct::new(',', ::proc_macro::Spacing::Alone)));
 				}
 			}
