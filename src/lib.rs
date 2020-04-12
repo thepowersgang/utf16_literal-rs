@@ -6,11 +6,14 @@
 //! extern crate utf16_literal;
 //!
 //! # fn main() {
-//! let v = utf16_literal::utf16!("Foo\u{1234}");
+//! let v = utf16_literal::utf16!("Foo\u{1234}😀");
 //! assert_eq!(v[0], 'F' as u16);
 //! assert_eq!(v[1], 'o' as u16);
 //! assert_eq!(v[2], 'o' as u16);
 //! assert_eq!(v[3], 0x1234);
+//! assert_eq!(v[4], 0xD83D);
+//! assert_eq!(v[5], 0xDE00);
+//! assert_eq!(v.len(), 6);
 //! # }
 //! ```
 

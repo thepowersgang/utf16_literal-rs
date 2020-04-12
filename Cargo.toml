@@ -1,6 +1,6 @@
 [package]
 name = "utf16_literal"
-version = "0.2.0"
+version = "0.2.1"
 description = "Provides the u16! macro that emits a UTF-16 string literal"
 authors = [ "John Hodge <tpg@mutabah.net>" ]
 repository = "https://github.com/thepowersgang/utf16_literal-rs"
